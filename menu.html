@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Milpat Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Milpat Restaurant Home">
+                <span class="logo-mark">MR</span>
+                <span class="logo-text">Milpat Restaurant</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="btn btn-outline btn-small" href="cart.html" aria-label="View cart">Cart <span id="cart-count" class="badge" aria-label="items in cart">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="section">
+            <div class="container">
+                <h1 style="font-family:'Playfair Display',serif; margin-bottom: 8px;">Seasonal Menu</h1>
+                <p class="hero-subtitle" style="text-align:left; margin: 0 0 24px 0;">Crafted with local ingredients. Click “Order” to add to your cart.</p>
+
+                <div class="menu-grid">
+                    <article class="menu-card" data-menu-item data-id="starter-burrata" data-price="14.00">
+                        <img src="https://images.unsplash.com/photo-1604908176997-43162f5d5a9d?q=80&w=1200&auto=format&fit=crop" alt="Heirloom Tomato Burrata" loading="lazy">
+                        <div class="content">
+                            <h3 data-name>Heirloom Tomato Burrata</h3>
+                            <p>Creamy burrata, basil oil, aged balsamic, grilled sourdough.</p>
+                            <div class="price">$14.00</div>
+                            <button class="btn btn-primary" data-add-to-cart>Order</button>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-menu-item data-id="main-seabass" data-price="29.00">
+                        <img src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=1200&auto=format&fit=crop" alt="Crispy Sea Bass" loading="lazy">
+                        <div class="content">
+                            <h3 data-name>Crispy Sea Bass</h3>
+                            <p>Lemon beurre blanc, fennel, charred lemon, herbs.</p>
+                            <div class="price">$29.00</div>
+                            <button class="btn btn-primary" data-add-to-cart>Order</button>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-menu-item data-id="main-steak" data-price="34.00">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop" alt="Prime NY Strip" loading="lazy">
+                        <div class="content">
+                            <h3 data-name>Prime NY Strip</h3>
+                            <p>Garlic butter, pomme purée, roasted asparagus.</p>
+                            <div class="price">$34.00</div>
+                            <button class="btn btn-primary" data-add-to-cart>Order</button>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-menu-item data-id="veg-risotto" data-price="24.00">
+                        <img src="https://images.unsplash.com/photo-1512058466831-224683f3f3e5?q=80&w=1200&auto=format&fit=crop" alt="Wild Mushroom Risotto" loading="lazy">
+                        <div class="content">
+                            <h3 data-name>Wild Mushroom Risotto</h3>
+                            <p>Parmigiano-Reggiano, white wine, thyme.</p>
+                            <div class="price">$24.00</div>
+                            <button class="btn btn-primary" data-add-to-cart>Order</button>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-menu-item data-id="dessert-torte" data-price="12.00">
+                        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="Dark Chocolate Torte" loading="lazy">
+                        <div class="content">
+                            <h3 data-name>Dark Chocolate Torte</h3>
+                            <p>Sea salt, raspberry coulis, whipped crème fraîche.</p>
+                            <div class="price">$12.00</div>
+                            <button class="btn btn-primary" data-add-to-cart>Order</button>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-menu-item data-id="drink-spritz" data-price="11.00">
+                        <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=1200&auto=format&fit=crop" alt="Citrus Spritz" loading="lazy">
+                        <div class="content">
+                            <h3 data-name>Citrus Spritz</h3>
+                            <p>Grapefruit, rosemary, sparkling water (zero-proof).</p>
+                            <div class="price">$11.00</div>
+                            <button class="btn btn-primary" data-add-to-cart>Order</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo footer-logo">
+                    <span class="logo-mark">MR</span>
+                    <span class="logo-text">Milpat Restaurant</span>
+                </div>
+                <p>123 Heritage Ave, Suite 5<br>Riverton, NY 10001</p>
+            </div>
+            <div>
+                <h4>Hours</h4>
+                <p>Tue–Sat: 5:00pm – 10:30pm<br>Sun–Mon: Closed</p>
+            </div>
+            <div>
+                <h4>Follow</h4>
+                <ul class="social">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Milpat Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Milpat Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Milpat Restaurant Home">
+                <span class="logo-mark">MR</span>
+                <span class="logo-text">Milpat Restaurant</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="btn btn-outline btn-small" href="cart.html" aria-label="View cart">Cart <span id="cart-count" class="badge" aria-label="items in cart">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="container cart">
+            <h1 style="font-family:'Playfair Display',serif; margin-bottom: 8px;">Your Cart</h1>
+            <p class="hero-subtitle" style="text-align:left; margin: 0 0 24px 0;">Review your selections before checkout.</p>
+            <div style="overflow-x:auto;">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-body"></tbody>
+                </table>
+            </div>
+            <div class="cart-summary">
+                <div>
+                    <div style="color:var(--muted);">Subtotal</div>
+                    <div id="cart-subtotal" style="font-weight:600;">$0.00</div>
+                </div>
+                <div>
+                    <div style="color:var(--muted);">Total</div>
+                    <div id="cart-total" style="font-weight:700;">$0.00</div>
+                </div>
+                <button class="btn btn-primary btn-large" type="button" onclick="alert('Checkout coming soon!')">Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo footer-logo">
+                    <span class="logo-mark">MR</span>
+                    <span class="logo-text">Milpat Restaurant</span>
+                </div>
+                <p>123 Heritage Ave, Suite 5<br>Riverton, NY 10001</p>
+            </div>
+            <div>
+                <h4>Hours</h4>
+                <p>Tue–Sat: 5:00pm – 10:30pm<br>Sun–Mon: Closed</p>
+            </div>
+            <div>
+                <h4>Follow</h4>
+                <ul class="social">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Milpat Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+

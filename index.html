@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milpat Restaurant - Fine Dining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://favicon.twenty.com/restaurant?bg=8B0000&fg=FFD700" type="image/png">
+    <meta name="description" content="Milpat Restaurant - An elegant fine dining experience. Reserve your table or explore our seasonal menu.">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Milpat Restaurant Home">
+                <span class="logo-mark">MR</span>
+                <span class="logo-text">Milpat Restaurant</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="btn btn-outline btn-small" href="cart.html" aria-label="View cart">Cart <span id="cart-count" class="badge" aria-label="items in cart">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="hero" aria-label="Hero">
+            <div class="hero-media" style="background-image:url('https://images.unsplash.com/photo-1541542684-4a8da0f3c9a9?q=80&w=1780&auto=format&fit=crop');">
+                <img src="https://images.unsplash.com/photo-1541542684-4a8da0f3c9a9?q=80&w=1780&auto=format&fit=crop" alt="Milpat Restaurant interior" loading="eager" fetchpriority="high">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Milpat Restaurant</h1>
+                <p class="hero-subtitle">An intimate fine dining experience celebrating seasonal ingredients and timeless technique.</p>
+                <div class="hero-ctas">
+                    <a class="btn btn-primary btn-large" href="menu.html">View Menu</a>
+                    <a class="btn btn-secondary btn-large" href="contact.html#reserve">Reserve Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section" aria-label="Highlights">
+            <div class="container grid-3">
+                <article class="feature">
+                    <h3>Seasonal Tasting</h3>
+                    <p>Curated multi-course menus changing with the harvest.</p>
+                </article>
+                <article class="feature">
+                    <h3>Cellar Selection</h3>
+                    <p>Sommelier-picked pairings from renowned vineyards.</p>
+                </article>
+                <article class="feature">
+                    <h3>Chef's Table</h3>
+                    <p>Immerse in the craft with a front-row culinary view.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo footer-logo">
+                    <span class="logo-mark">MR</span>
+                    <span class="logo-text">Milpat Restaurant</span>
+                </div>
+                <p>123 Heritage Ave, Suite 5<br>Riverton, NY 10001</p>
+            </div>
+            <div>
+                <h4>Hours</h4>
+                <p>Tue–Sat: 5:00pm – 10:30pm<br>Sun–Mon: Closed</p>
+            </div>
+            <div>
+                <h4>Follow</h4>
+                <ul class="social">
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="X">X</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Milpat Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Milpat Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Milpat Restaurant Home">
+                <span class="logo-mark">MR</span>
+                <span class="logo-text">Milpat Restaurant</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="btn btn-outline btn-small" href="cart.html" aria-label="View cart">Cart <span id="cart-count" class="badge" aria-label="items in cart">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="section">
+            <div class="container">
+                <h1 style="font-family:'Playfair Display',serif; margin-bottom: 8px;">Gallery</h1>
+                <p class="hero-subtitle" style="text-align:left; margin: 0 0 24px 0;">Browse our cuisine, dining room, and behind-the-scenes moments.</p>
+
+                <div class="gallery-controls" role="tablist" aria-label="Filter gallery">
+                    <button class="btn btn-secondary btn-small is-active" role="tab" data-filter="all" aria-selected="true">All</button>
+                    <button class="btn btn-secondary btn-small" role="tab" data-filter="dishes">Dishes</button>
+                    <button class="btn btn-secondary btn-small" role="tab" data-filter="interior">Interior</button>
+                    <button class="btn btn-secondary btn-small" role="tab" data-filter="people">People</button>
+                </div>
+
+                <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+                <div style="display:flex; justify-content:center; margin-top:16px;">
+                    <button id="gallery-load-more" class="btn btn-outline">Load more</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo footer-logo">
+                    <span class="logo-mark">MR</span>
+                    <span class="logo-text">Milpat Restaurant</span>
+                </div>
+                <p>123 Heritage Ave, Suite 5<br>Riverton, NY 10001</p>
+            </div>
+            <div>
+                <h4>Hours</h4>
+                <p>Tue–Sat: 5:00pm – 10:30pm<br>Sun–Mon: Closed</p>
+            </div>
+            <div>
+                <h4>Follow</h4>
+                <ul class="social">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Milpat Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
